@@ -1,0 +1,41 @@
+#include<stdio.h>
+int main()
+{
+    int a,b;
+    char ch,u;
+    for(int i=0;i>=0;i++ )
+    {
+
+    printf("Enter a choice(+,-,*,/ and Press any + enter for exit):");
+    scanf(" %c",&u);
+    ch =tolower(u);
+    if(u=='+'||u=='-'||u=='*'||u=='/')
+    {
+    printf("Enter 1st number:");
+    scanf("%d",&a);
+    printf("Enter 2nd number:");
+    scanf("%d",&b);
+    if(ch=='+')
+      printf("Summation:%d\n",a+b);
+    else if (ch=='-')
+    {
+        printf("Subtraction:%d\n",a-b);
+    }
+    else if (ch=='*')
+    {
+        /* code */
+        printf("Multiplication:%d\n",a*b);
+    }
+    else if (ch=='/')
+    {
+        /* code */
+        printf("Division:%d\n",a/b);
+    }
+    }
+    else{
+      break;
+    }
+
+    }
+
+}
